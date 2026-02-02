@@ -1,0 +1,55 @@
+export const projects = [
+  {
+    id: 1,
+    title: "E  Commerce",
+    description: "A complete e-commerce platform focused on online mango sales. Includes product listing, cart management, user authentication, and admin controls.",
+    image: "/images/project1.jpg",
+    tags: ["MongoDB", "Express", "React", "Node.js", "Next.js"],
+    link: "https://www.salemakmangoes.in/",
+    github: "https://github.com/vigneshmahaan/salemAKmangoes",
+  },
+  {
+    id: 2,
+    title: "NeurAIQ",
+    description: "AI teaching assistant bot that helps students understand concepts through interactive conversations. Features simplified explanations and instant responses.",
+    image: "/images/project2.jpg",
+    tags: ["AI", "NLP", "Python", "Web Interface"],
+    github: "https://github.com/vigneshmahaan/neuroiq",
+  },
+  {
+    id: 3,
+    title: "Sepsis Alert System",
+    description: "IoT-based healthcare monitoring system detecting early signs of sepsis using patient vitals and AI/ML analysis.",
+    image: "/images/project3.jpg",
+    tags: ["Machine Learning", "IoT Sensors", "Python", "Web Dashboard"],
+    link: "https://sepsis-gamma.vercel.app/",
+    github: "https://github.com/vigneshmahaan/sepsis",
+  },
+  {
+    id: 4,
+    title: "Lungs AI",
+    description: "Respiratory disease detection system using CNN and Random Forest models on lung sound audio files.",
+    image: "/images/project1.jpg",
+    tags: ["Random Forest", "CNN", "Python", "Audio Processing"],
+    github: "https://github.com/vigneshmahaan/lungs-ai-project",
+  },
+  {
+    id: 5,
+    title: "Medical Waste Segregation",
+    description: "Smart dustbin that automatically detects and segregates medical waste using ML models and IoT mechanisms.",
+    image: "/images/project2.jpg",
+    tags: ["IoT", "Machine Learning", "Image Processing"],
+    github: "https://github.com/vigneshmahaan/AI_Based_Medical_smart_dustbin",
+  },
+  {
+    id: 6,
+    title: "College Symposium Website",
+    description: "Full-stack event management website handling registrations, schedules, and announcements with a modern UI.",
+    image: "/images/project3.jpg",
+    tags: ["MongoDB", "Express", "React", "Node.js"],
+    link: "https://neuraverse2k25.vercel.app/",
+    github: "https://github.com/vigneshmahaan/neuraverse25",
+  },
+];
+
+// Force rebuild
