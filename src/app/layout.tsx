@@ -11,7 +11,7 @@ import { CustomCursor } from "@/components/ui/custom-cursor";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Vigneshwaran",
   description: "Modern portfolio website built with Next.js and Tailwind CSS",
 };
 
