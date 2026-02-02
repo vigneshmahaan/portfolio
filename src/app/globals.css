@@ -120,7 +120,7 @@
 
 @layer utilities {
   .bento-card {
-    @apply relative overflow-hidden rounded-3xl border border-white/10 bg-neutral-900/50 backdrop-blur-xl transition-all duration-300 hover:border-white/20 hover:shadow-[0_8px_30px_rgb(0_0_0_/_0.12)];
+    @apply relative overflow-hidden rounded-3xl border border-black/10 dark:border-white/10 bg-card/50 dark:bg-neutral-900/50 backdrop-blur-xl transition-all duration-300 hover:border-black/20 dark:hover:border-white/20 hover:shadow-[0_8px_30px_rgb(0_0_0_/_0.05)] dark:hover:shadow-[0_8px_30px_rgb(0_0_0_/_0.2)];
   }
 
   .bento-grid {
@@ -128,10 +128,10 @@
   }
 
   .spotlight-hover {
-    @apply relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent hover:before:translate-x-full;
+    @apply relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-black/5 dark:before:via-white/5 before:to-transparent hover:before:translate-x-full;
   }
 
   .text-glow {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    @apply dark:[text-shadow:0_0_20px_rgb(255_255_255_/_0.3)] [text-shadow:0_0_20px_rgb(0_0_0_/_0.05)];
   }
 }

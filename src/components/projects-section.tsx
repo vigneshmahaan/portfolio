@@ -66,11 +66,11 @@ export function ProjectsSection() {
                             </div>
 
                             {/* Floating "Image" Area */}
-                            <div className="md:w-1/2 w-full aspect-[4/3] bg-white/5 relative overflow-hidden rounded-sm transition-transform duration-700 group-hover:scale-[1.02]">
-                                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
+                            <div className="md:w-1/2 w-full aspect-[4/3] bg-foreground/5 relative overflow-hidden rounded-sm transition-transform duration-700 group-hover:scale-[1.02]">
+                                <div className="absolute inset-0 bg-gradient-to-br from-foreground/5 to-transparent"></div>
                                 {/* Placeholder Gradient since no real images */}
                                 <div className="absolute inset-0 flex items-center justify-center opacity-30">
-                                    <h4 className="text-9xl font-serif text-foreground/15 select-none group-hover:scale-110 transition-transform duration-700">{index + 1}</h4>
+                                    <h4 className="text-9xl font-serif text-foreground/40 select-none group-hover:scale-110 transition-transform duration-700">{index + 1}</h4>
                                 </div>
                             </div>
                         </motion.div>

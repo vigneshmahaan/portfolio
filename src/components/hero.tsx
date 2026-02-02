@@ -59,17 +59,17 @@ export function Hero() {
                     <div className="space-y-4">
                         <div className="flex items-center gap-2">
                             <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse"></div>
-                            <span className="text-sm text-muted-foreground font-mono">Available for new projects</span>
+                            <span className="text-sm text-foreground/60 dark:text-muted-foreground font-mono">Available for new projects</span>
                         </div>
                         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground">
                             I'm Vigneshwaran.
                         </h1>
-                        <div className="text-xl md:text-2xl text-muted-foreground h-8">
+                        <div className="text-xl md:text-2xl text-foreground/60 dark:text-muted-foreground h-8 font-light">
                             I build <TypingEffect words={["Scalable Web Apps", "AI Solutions", "IoT Systems", "The Future"]} />
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
-                        <p className="text-muted-foreground max-w-lg">
+                        <p className="text-foreground/70 dark:text-muted-foreground max-w-lg">
                             Full Stack Developer & AI Engineer crafting premium digital experiences.
                             Specialized in Next.js, Python, and scalable architecture.
                         </p>

@@ -136,7 +136,7 @@ export function ContactSection() {
                                     </FormItem>
                                 )}
                             />
-                            <Button type="submit" className="bg-white text-black hover:bg-gold hover:text-white rounded-full px-12 py-8 text-lg font-bold tracking-widest uppercase transition-all duration-500 w-full md:w-auto">
+                            <Button type="submit" className="bg-primary text-primary-foreground hover:bg-gold hover:text-white rounded-full px-12 py-8 text-lg font-bold tracking-widest uppercase transition-all duration-500 w-full md:w-auto">
                                 Send Request
                             </Button>
                         </form>
