@@ -39,7 +39,7 @@ const TypingEffect = ({ words }: { words: string[] }) => {
     }, [blink]);
 
     return (
-        <span className="text-primary font-mono">
+        <span className="text-primary font-mono drop-shadow-[0_0_10px_rgba(var(--primary),0.2)]">
             {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
         </span>
     );
@@ -61,7 +61,7 @@ export function Hero() {
                             <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse"></div>
                             <span className="text-sm text-muted-foreground font-mono">Available for new projects</span>
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white">
+                        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground">
                             I'm Vigneshwaran.
                         </h1>
                         <div className="text-xl md:text-2xl text-muted-foreground h-8">
@@ -80,7 +80,7 @@ export function Hero() {
                                 </button>
                             </Link>
                             <Link href="/Vignesh_resume.pdf" target="_blank">
-                                <button className="border border-white/10 bg-white/5 px-6 py-2 rounded-full font-medium hover:bg-white/10 transition-colors flex items-center gap-2">
+                                <button className="border border-foreground/10 bg-foreground/5 px-6 py-2 rounded-full font-medium hover:bg-foreground/10 transition-colors flex items-center gap-2">
                                     <Download className="w-4 h-4" /> CV
                                 </button>
                             </Link>
@@ -93,10 +93,10 @@ export function Hero() {
                 <div className="bento-card p-6 flex flex-col justify-between hover:border-primary/50 group">
                     <div className="flex justify-between items-start">
                         <MapPin className="text-muted-foreground group-hover:text-primary transition-colors" />
-                        <span className="text-xs font-mono text-muted-foreground bg-white/5 px-2 py-1 rounded">LOC</span>
+                        <span className="text-xs font-mono text-muted-foreground bg-foreground/5 px-2 py-1 rounded">LOC</span>
                     </div>
                     <div>
-                        <h3 className="text-lg font-bold text-white">Based in</h3>
+                        <h3 className="text-lg font-bold text-foreground">Based in</h3>
                         <p className="text-muted-foreground">Madurai,Tamil Nadu, India</p>
                     </div>
                 </div>
@@ -104,16 +104,16 @@ export function Hero() {
                 {/* Socials Block */}
                 <div className="bento-card p-6 flex flex-col justify-center gap-6 group">
                     <div className="grid grid-cols-2 gap-4">
-                        <Link href="https://github.com/vigneshmahaan" target="_blank" className="flex items-center gap-3 text-muted-foreground hover:text-white transition-colors">
+                        <Link href="https://github.com/vigneshmahaan" target="_blank" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                             <Github className="w-5 h-5" />
                             <span className="text-sm">Github</span>
                         </Link>
-                        <Link href="https://www.linkedin.com/in/vigneshwaran-b-9963b1317/" target="_blank" className="flex items-center gap-3 text-muted-foreground hover:text-white transition-colors">
+                        <Link href="https://www.linkedin.com/in/vigneshwaran-b-9963b1317/" target="_blank" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                             <Linkedin className="w-5 h-5" />
                             <span className="text-sm">LinkedIn</span>
                         </Link>
 
-                        <Link href="mailto:sparrowb457@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-white transition-colors">
+                        <Link href="mailto:sparrowb457@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                             <Mail className="w-5 h-5" />
                             <span className="text-sm">Email</span>
                         </Link>
@@ -125,7 +125,7 @@ export function Hero() {
                     <span className="text-sm font-mono text-muted-foreground text-nowrap">Trusted Tech Stack</span>
                     <div className="flex gap-4 items-center opacity-50 group-hover:opacity-100 transition-opacity mask-linear-gradient">
                         {["React", "Next.js", "TypeScript", "Python", "Tailwind", "Node.js", "Docker", "AWS"].map((tech) => (
-                            <span key={tech} className="text-sm font-bold text-muted-foreground px-3 py-1 border border-white/5 rounded-full bg-white/5">
+                            <span key={tech} className="text-sm font-bold text-muted-foreground px-3 py-1 border border-foreground/10 rounded-full bg-foreground/5">
                                 {tech}
                             </span>
                         ))}

@@ -28,10 +28,10 @@ export function SkillsSection() {
                     viewport={{ once: true }}
                     className="mb-16 text-center"
                 >
-                    <h2 className="text-sm font-light tracking-[0.5em] uppercase text-white/40">Technical Proficiency</h2>
+                    <h2 className="text-sm font-light tracking-[0.5em] uppercase text-foreground/40">Technical Proficiency</h2>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-white/10 md:border-l">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-foreground/10 md:border-l">
                     {skills.map((skillGroup, index) => (
                         <motion.div
                             key={skillGroup.category}
@@ -39,14 +39,14 @@ export function SkillsSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            className={`p-6 md:p-8 border-b border-white/10 group hover:bg-white/5 transition-colors duration-500 md:border-r`}
+                            className={`p-6 md:p-8 border-b border-foreground/10 group hover:bg-foreground/5 transition-colors duration-500 md:border-r`}
                         >
                             <h3 className="text-xs font-mono text-gold mb-6 uppercase tracking-widest opacity-80 group-hover:opacity-100">
                                 0{index + 1} / {skillGroup.category}
                             </h3>
                             <div className="flex flex-col gap-3">
                                 {skillGroup.items.map((item) => (
-                                    <span key={item} className="text-xl font-light text-white/70 group-hover:text-white transition-colors">
+                                    <span key={item} className="text-xl font-light text-foreground/70 group-hover:text-foreground transition-colors">
                                         {item}
                                     </span>
                                 ))}

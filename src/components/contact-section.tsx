@@ -72,7 +72,7 @@ export function ContactSection() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-6xl md:text-8xl font-serif text-white mb-6">Let's Talk.</h2>
+                    <h2 className="text-6xl md:text-8xl font-serif text-foreground mb-6">Let's Talk.</h2>
                     <p className="text-muted-foreground text-lg font-light">
                         Have a project in mind? Send me a message.
                     </p>
@@ -96,7 +96,7 @@ export function ContactSection() {
                                                 <Input
                                                     placeholder="NAME"
                                                     {...field}
-                                                    className="bg-transparent border-0 border-b border-white/10 rounded-none px-0 py-6 text-xl text-white focus-visible:ring-0 focus-visible:border-gold transition-colors placeholder:text-white/20"
+                                                    className="bg-transparent border-0 border-b border-foreground/10 rounded-none px-0 py-6 text-xl text-foreground focus-visible:ring-0 focus-visible:border-gold transition-colors placeholder:text-foreground/20"
                                                 />
                                             </FormControl>
                                             <FormMessage />
@@ -112,7 +112,7 @@ export function ContactSection() {
                                                 <Input
                                                     placeholder="EMAIL"
                                                     {...field}
-                                                    className="bg-transparent border-0 border-b border-white/10 rounded-none px-0 py-6 text-xl text-white focus-visible:ring-0 focus-visible:border-gold transition-colors placeholder:text-white/20"
+                                                    className="bg-transparent border-0 border-b border-foreground/10 rounded-none px-0 py-6 text-xl text-foreground focus-visible:ring-0 focus-visible:border-gold transition-colors placeholder:text-foreground/20"
                                                 />
                                             </FormControl>
                                             <FormMessage />
@@ -128,7 +128,7 @@ export function ContactSection() {
                                         <FormControl>
                                             <Textarea
                                                 placeholder="TELL ME ABOUT YOUR PROJECT"
-                                                className="resize-none bg-transparent border-0 border-b border-white/10 rounded-none px-0 py-6 text-xl text-white focus-visible:ring-0 focus-visible:border-gold transition-colors min-h-[100px] placeholder:text-white/20"
+                                                className="resize-none bg-transparent border-0 border-b border-foreground/10 rounded-none px-0 py-6 text-xl text-foreground focus-visible:ring-0 focus-visible:border-gold transition-colors min-h-[100px] placeholder:text-foreground/20"
                                                 {...field}
                                             />
                                         </FormControl>

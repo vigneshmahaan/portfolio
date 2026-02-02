@@ -24,8 +24,8 @@ export function ProjectsSection() {
                     viewport={{ once: true }}
                     className="mb-24"
                 >
-                    <h2 className="text-sm font-light tracking-[0.5em] uppercase text-white/40 mb-4">Selected Works</h2>
-                    <div className="h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+                    <h2 className="text-sm font-light tracking-[0.5em] uppercase text-foreground/40 mb-4">Selected Works</h2>
+                    <div className="h-px w-full bg-gradient-to-r from-transparent via-foreground/10 to-transparent"></div>
                 </motion.div>
 
                 <div className="flex flex-col gap-32">
@@ -40,7 +40,7 @@ export function ProjectsSection() {
                         >
                             {/* Text Content */}
                             <div className={`flex flex-col gap-6 md:w-1/2 ${index % 2 === 1 ? 'md:order-last' : ''}`}>
-                                <h3 className="text-5xl md:text-7xl font-serif text-white group-hover:text-gold transition-colors duration-500 cursor-pointer">
+                                <h3 className="text-5xl md:text-7xl font-serif text-foreground group-hover:text-gold transition-colors duration-500 cursor-pointer">
                                     {project.title}
                                 </h3>
                                 <p className="text-lg text-muted-foreground font-light leading-relaxed max-w-md">
@@ -48,18 +48,18 @@ export function ProjectsSection() {
                                 </p>
                                 <div className="flex flex-wrap gap-3">
                                     {project.tags.map((tag) => (
-                                        <span key={tag} className="text-xs font-mono uppercase tracking-widest text-white/50 border border-white/10 px-3 py-1 rounded-full">
+                                        <span key={tag} className="text-xs font-mono uppercase tracking-widest text-foreground/50 border border-foreground/10 px-3 py-1 rounded-full">
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
                                 <div className="pt-4 flex gap-8 items-center">
                                     {project.link && (
-                                        <Link href={project.link} target="_blank" className="flex items-center gap-2 text-white text-sm font-bold uppercase tracking-widest hover:text-gold transition-colors">
+                                        <Link href={project.link} target="_blank" className="flex items-center gap-2 text-foreground text-sm font-bold uppercase tracking-widest hover:text-gold transition-colors">
                                             View Live <ExternalLink className="w-4 h-4" />
                                         </Link>
                                     )}
-                                    <Link href={project.github} target="_blank" className="flex items-center gap-2 text-white/50 text-sm font-bold uppercase tracking-widest hover:text-white transition-colors">
+                                    <Link href={project.github} target="_blank" className="flex items-center gap-2 text-foreground/50 text-sm font-bold uppercase tracking-widest hover:text-foreground transition-colors">
                                         Github
                                     </Link>
                                 </div>
@@ -70,7 +70,7 @@ export function ProjectsSection() {
                                 <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
                                 {/* Placeholder Gradient since no real images */}
                                 <div className="absolute inset-0 flex items-center justify-center opacity-30">
-                                    <h4 className="text-9xl font-serif text-white/10 select-none group-hover:scale-110 transition-transform duration-700">{index + 1}</h4>
+                                    <h4 className="text-9xl font-serif text-foreground/15 select-none group-hover:scale-110 transition-transform duration-700">{index + 1}</h4>
                                 </div>
                             </div>
                         </motion.div>
