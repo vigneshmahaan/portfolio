@@ -8,7 +8,7 @@ import { useTheme } from "next-themes";
 
 export function ParticlesBackground() {
     const [init, setInit] = useState(false);
-    const { theme } = useTheme();
+    const { resolvedTheme } = useTheme();
 
     useEffect(() => {
         initParticlesEngine(async (engine) => {
@@ -21,6 +21,8 @@ export function ParticlesBackground() {
     const particlesLoaded = async (container?: Container): Promise<void> => {
         // console.log(container);
     };
+
+    const isDark = resolvedTheme === "dark";
 
     const options: ISourceOptions = {
         background: {
@@ -52,13 +54,13 @@ export function ParticlesBackground() {
         },
         particles: {
             color: {
-                value: ["#06b6d4", "#7c3aed"], // Cyan and Purple
+                value: isDark ? ["#06b6d4", "#7c3aed"] : ["#3b82f6", "#8b5cf6"],
             },
             links: {
-                color: theme === "dark" ? "#ffffff" : "#000000",
+                color: isDark ? "#ffffff" : "#000000",
                 distance: 150,
                 enable: true,
-                opacity: 0.2, // Reduced slightly for subtle effect
+                opacity: isDark ? 0.2 : 0.1,
                 width: 1,
             },
             move: {
@@ -68,17 +70,17 @@ export function ParticlesBackground() {
                     default: "bounce",
                 },
                 random: true,
-                speed: 1, // Slower for more elegance
+                speed: 1,
                 straight: false,
             },
             number: {
                 density: {
                     enable: true,
                 },
-                value: 100, // More particles
+                value: 80, // Slightly reduced to prevent overwhelming light mode
             },
             opacity: {
-                value: 0.5,
+                value: isDark ? 0.5 : 0.3,
             },
             shape: {
                 type: "circle",
@@ -96,6 +98,7 @@ export function ParticlesBackground() {
 
     return (
         <Particles
+            key={resolvedTheme} // Force re-render on theme change
             id="tsparticles"
             particlesLoaded={particlesLoaded}
             options={options}
